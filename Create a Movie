@@ -1,0 +1,119 @@
+% This is certainly not the most efficient way of creating a movie but here it is. 
+
+figure1 = openfig('Put your graph's name in here'); % Depending on how many time-steps you would like to graph, delete/add another line (e.g. figure 100 = openfig('Name of your graph.fig')
+figure2 = openfig('Dolomite at time 1.00000000E-02 sec_mesh2.fig');
+figure3 = openfig('Dolomite at time 3.15567000E+06 sec_mesh3.fig');
+figure4 = openfig('Dolomite at time 6.31135000E+06 sec_mesh4.fig');
+figure5 = openfig('Dolomite at time 9.46702000E+06 sec_mesh5.fig');
+figure6 = openfig('Dolomite at time 1.26227000E+07 sec_mesh6.fig');
+figure7 = openfig('Dolomite at time 1.57784000E+07 sec_mesh7.fig');
+figure8 = openfig('Dolomite at time 1.89340000E+07 sec_mesh8.fig');
+figure9 = openfig('Dolomite at time 2.20897000E+07 sec_mesh9.fig');
+figure10 = openfig('Dolomite at time 2.52454000E+07 sec_mesh10.fig');
+figure11 = openfig('Dolomite at time 2.84011000E+07 sec_mesh10.fig');
+figure12 = openfig('Dolomite at time 3.15567000E+07 sec_mesh11.fig');
+figure13 = openfig('Dolomite at time 6.31135000E+07 sec_mesh12.fig');
+figure14 = openfig('Dolomite at time 9.46702000E+07 sec_mesh13.fig');
+figure15 = openfig('Dolomite at time 1.26227000E+08 sec_mesh14.fig');
+figure16 = openfig('Dolomite at time 1.57784000E+08 sec_mesh15.fig');
+figure17 = openfig('Dolomite at time 1.89340000E+08 sec_mesh16.fig');
+figure18 = openfig('Dolomite at time 2.20897000E+08 sec_mesh17.fig');
+figure19 = openfig('Dolomite at time 2.52454000E+08 sec_mesh18.fig');
+figure20 = openfig('Dolomite at time 2.84011000E+08 sec_mesh19.fig');
+figure21 = openfig('Dolomite at time 3.15567000E+08 sec_mesh20.fig');
+figure22 = openfig('Dolomite at time 3.47124000E+08 sec_mesh21.fig');
+figure23 = openfig('Dolomite at time 3.78681000E+08 sec_mesh22.fig');
+figure24 = openfig('Dolomite at time 4.10238000E+08 sec_mesh23.fig');
+figure25 = openfig('Dolomite at time 4.41794000E+08 sec_mesh24.fig');
+figure26 = openfig('Dolomite at time 4.73351000E+08 sec_mesh25.fig');
+figure27 = openfig('Dolomite at time 5.04908000E+08 sec_mesh26.fig');
+figure28 = openfig('Dolomite at time 5.36465000E+08 sec_mesh27.fig');
+figure29 = openfig('Dolomite at time 5.68021000E+08 sec_mesh28.fig');
+figure30 = openfig('Dolomite at time 5.99578000E+08 sec_mesh29.fig');
+figure31 = openfig('Dolomite at time 6.31135000E+08 sec_mesh30.fig');
+figure32 = openfig('Dolomite at time 6.62691000E+08 sec_mesh31.fig');
+figure33 = openfig('Dolomite at time 6.94248000E+08 sec_mesh32.fig');
+figure34 = openfig('Dolomite at time 7.25805000E+08 sec_mesh33.fig');
+figure35 = openfig('Dolomite at time 7.57362000E+08 sec_mesh34.fig');
+figure36 = openfig('Dolomite at time 7.88918000E+08 sec_mesh35.fig');
+figure37 = openfig('Dolomite at time 8.20475000E+08 sec_mesh36.fig');
+figure38 = openfig('Dolomite at time 8.52032000E+08 sec_mesh37.fig');
+figure39 = openfig('Dolomite at time 8.83589000E+08 sec_mesh38.fig');
+figure40 = openfig('Dolomite at time 9.15145000E+08 sec_mesh39.fig');
+figure41 = openfig('Dolomite at time 9.46702000E+08 sec_mesh40.fig');
+%figure42 = openfig('Gas Saturation at time 9.78259000E+08 sec_mesh42.fig');
+%figure43 = openfig('Gas Saturation at time 1.00982000E+09 sec_mesh43.fig');
+%figure44 = openfig('Gas Saturation at time 1.04137000E+09 sec_mesh44.fig');
+%figure45 = openfig('Gas Saturation at time 1.07293000E+09 sec_mesh45.fig');
+%figure46 = openfig('Gas Saturation at time 1.10449000E+09 sec_mesh46.fig');
+%figure47 = openfig('Gas Saturation at time 1.13604000E+09 sec_mesh47.fig');
+%figure48 = openfig('Gas Saturation at time 1.16760000E+09 sec_mesh48.fig');
+%figure49 = openfig('Gas Saturation at time 1.19916000E+09 sec_mesh49.fig');
+%figure50 = openfig('Gas Saturation at time 1.23071000E+09 sec_mesh50.fig');
+%figure51 = openfig('Gas Saturation at time 1.26227000E+09 sec_mesh51.fig');
+%figure52 = openfig('Gas Saturation at time 1.29383000E+09 sec_mesh52.fig');
+%figure53 = openfig('Gas Saturation at time 1.32538000E+09 sec_mesh53.fig');
+%figure54 = openfig('Gas Saturation at time 1.35694000E+09 sec_mesh54.fig');
+%figure55 = openfig('Gas Saturation at time 1.38850000E+09 sec_mesh55.fig');
+%figure56 = openfig('Gas Saturation at time 1.42005000E+09 sec_mesh56.fig');
+%figure57 = openfig('Gas Saturation at time 1.45161000E+09 sec_mesh57.fig');
+%figure58 = openfig('Gas Saturation at time 1.48317000E+09 sec_mesh58.fig');
+%figure59 = openfig('Gas Saturation at time 1.51472000E+09 sec_mesh59.fig');
+%figure60 = openfig('Gas Saturation at time 1.54628000E+09 sec_mesh60.fig');
+%figure61 = openfig('Gas Saturation at time 1.57784000E+09 sec_mesh61.fig');
+
+
+frames(1) = getframe(figure1); 
+frames(2) = getframe(figure2);
+frames(3) = getframe(figure3);
+frames(4) = getframe(figure4);
+frames(5) = getframe(figure5);
+frames(6) = getframe(figure6);
+frames(7) = getframe(figure7);
+frames(8) = getframe(figure8);
+frames(9) = getframe(figure9);
+frames(10) = getframe(figure10);
+frames(11) = getframe(figure11);
+frames(12) = getframe(figure12);
+frames(13) = getframe(figure13);
+frames(14) = getframe(figure14);
+frames(15) = getframe(figure15);
+frames(16) = getframe(figure16);
+frames(17) = getframe(figure17);
+frames(18) = getframe(figure18);
+frames(19) = getframe(figure19);
+frames(20) = getframe(figure20);
+frames(21) = getframe(figure21);
+frames(22) = getframe(figure22);
+frames(23) = getframe(figure23);
+frames(24) = getframe(figure24);
+frames(25) = getframe(figure25);
+frames(26) = getframe(figure26);
+frames(27) = getframe(figure27);
+frames(28) = getframe(figure28);
+frames(29) = getframe(figure29);
+frames(30) = getframe(figure30);
+frames(31) = getframe(figure31);
+frames(32) = getframe(figure32);
+frames(33) = getframe(figure33);
+frames(34) = getframe(figure34);
+frames(35) = getframe(figure35);
+frames(36) = getframe(figure36);
+frames(37) = getframe(figure37);
+frames(38) = getframe(figure38);
+frames(39) = getframe(figure39);
+frames(40) = getframe(figure40);
+frames(41) = getframe(figure41);
+
+F(41) = struct('cdata',[],'colormap',[]); % Replace the number inside F(41) with the number of figures you have 
+for i = 1:41 % make sure the maximum number is equal to your last figure number
+    F(i) = im2frame(frames(i).cdata);
+end
+
+writerObj = VideoWriter('Dolomite_bigpic.avi');
+writerObj.FrameRate = .75; % you can change how many seconds each graph will show
+open(writerObj);
+for i = 1:41 % make sure the maximum number is equal to your last figure number
+    writeVideo(writerObj,F(i));
+end
+close(writerObj);
