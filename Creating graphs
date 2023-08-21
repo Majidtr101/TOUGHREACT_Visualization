@@ -1,0 +1,49 @@
+counter = 1;
+mesh_size = X; % Place the number of elements you have here
+
+for mesh_number = 1:100 % set the maximum number to ITE (or ITE + 1) - you can also let it be 100 or 1000 and the loop will stop by itself once it has reached the end (it will give you an error when it is done but that is okay)
+for_time = mesh_size*(mesh_number-1)+(mesh_number+2);
+
+num = xlsread('NameOfYourExcelSheet.xlsx'); %insert your excel file here - make sure you have delimited your excel data: here is how to do it - open excel, 
+% copy the .txt file you want to graph into excel (CTRL + A when inside the .txt file), paste in excel
+%, click on "data" in excel, click on "text to columns" in excel, 
+% select "delimited", click "next", check "space", press "next" and "finish". Viola! 
+
+if isempty(num)
+    break; % exit loop if num is empty
+end
+
+x = num(((mesh_number-1)*mesh_size+mesh_number+1):(mesh_number*mesh_size+mesh_number),1); % x-direction - x-value should be on the 1st column of the excel sheet
+z = num(((mesh_number-1)*mesh_size+mesh_number+1):(mesh_number*mesh_size+mesh_number),3); % z-direction - z-value should be on the 3rd column of the excel sheet
+PH = num(((mesh_number-1)*mesh_size+mesh_number+1):(mesh_number*mesh_size+mesh_number),7); % Depending on what you're graphing, pick the column of interest (e.g. gas saturation = 6)
+
+[num,txt,raw] = xlsread('Sl-min_july26th.xlsx'); %insert your excel file here 
+t = raw(for_time,3);
+
+PP = reshape(PH,[21, 56]); % [x, y] -> x = number of layers, y = number of columns 
+
+xx = unique(x);
+zz = unique(z);
+
+zzz = sortrows(zz,1,'descend');
+
+[X,Y] = meshgrid(xx,zzz);
+pcolor(X,Y,PP);
+colorbar;
+
+subplot(1,2,1); 
+figu = pcolor(X,Y,PP);
+colormap('default'); 
+xlabel('Distance away from the well (m)'); 
+ylabel('Depth (m)');
+title(['Dolomite Precipitation / Dissolution at ', t]); % Change your title according to what you are graphing
+colorbar;
+axis([0 2000 -154 0]) % 0 and 2000 shows the distance we are going to focus into. -154 and 0 shows the depth we are going to focus. 
+t_string=raw{for_time,3};
+shading interp;
+
+%Changing the range of the graphs
+caxis([-0.1 1]); % Fixates the colorbar to a specific range
+
+set(gcf, 'Position', get(0, 'Screensize'));
+saveas(figu,sprintf('Dolomite at time %s_mesh%d.fig',t_string,mesh_number)); % Saves the file under a specific name 
